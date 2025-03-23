@@ -30,7 +30,7 @@ public class Post_non_bddstyle {
         r.basePath("/auth");
         r.contentType(ContentType.JSON);
 
-        r.body(payload);
+        r.log().all().body(payload);
         //making http request
         response = r.when().log().all().post();
 
