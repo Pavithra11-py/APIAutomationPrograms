@@ -19,11 +19,7 @@ public class gson {
     // which converts class to JSON and also JSON to class
     // JSON - is a plain text in a ke - value pair to transfer from client to server
 
-    RequestSpecification rs;
-    Response r;
-    ValidatableResponse vr;
-    String Token;
-    Integer bookingid;
+
     @Test
     public  void Test_create_booking_Postive() {
 
@@ -101,9 +97,16 @@ public class gson {
         System.out.println(firstname);
         System.out.println(checkin);
 
+        //converting JSON to java OBject
         // case 3 Deser (de serialization) extraction
 
+       BookingResponse bookingresponse =  gson.fromJson(jsonresponse,BookingResponse.class);
+        System.out.println(bookingresponse.getBooking().getFirstname());
+        System.out.println(bookingresponse.getBooking().getLastname());
+        System.out.println(bookingresponse.getBooking().getDepositpaid());
 
+        assertThat(bookingresponse.getBookingid()).isNotZero().isNotNull();
+        assertThat(bookingresponse.getBooking().getFirstname()).isEqualTo("Jim");
     }
 
 }
