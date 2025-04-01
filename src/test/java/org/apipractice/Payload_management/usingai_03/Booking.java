@@ -1,4 +1,4 @@
-package org.apipractice.Paload_management.usingai_03;
+package org.apipractice.Payload_management.usingai_03;
 
 
 public class Booking {

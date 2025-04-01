@@ -1,4 +1,4 @@
-package org.apipractice.Paload_management;
+package org.apipractice.Payload_management;
 
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;

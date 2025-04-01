@@ -1,4 +1,4 @@
-package org.apipractice.Paload_management.Jackson;
+package org.apipractice.Payload_management.Jackson;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class APITesting031_RestAssured_JackSON_API {
+public class Restassures_jackson {
     RequestSpecification requestSpecification;
     ValidatableResponse validatableResponse;
     @Test

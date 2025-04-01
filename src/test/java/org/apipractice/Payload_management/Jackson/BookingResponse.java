@@ -1,4 +1,4 @@
-package org.apipractice.Paload_management.Jackson;
+package org.apipractice.Payload_management.Jackson;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

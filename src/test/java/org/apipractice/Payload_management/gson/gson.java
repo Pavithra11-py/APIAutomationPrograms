@@ -1,13 +1,15 @@
-package org.apipractice.Paload_management.gson;
+package org.apipractice.Payload_management.gson;
 
 import com.google.gson.Gson;
-import io.qameta.allure.Description;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import org.apipractice.Payload_management.Jackson.BookingResponse;
+import org.apipractice.Payload_management.jsonschema2pojo_tool_02.Booking;
+import org.apipractice.Payload_management.jsonschema2pojo_tool_02.Bookingdates;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

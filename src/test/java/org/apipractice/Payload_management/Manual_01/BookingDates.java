@@ -1,4 +1,4 @@
-package org.apipractice.Paload_management.Manual_01;
+package org.apipractice.Payload_management.Manual_01;
 
 public class BookingDates {
 

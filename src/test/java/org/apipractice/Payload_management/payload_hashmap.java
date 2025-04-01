@@ -1,12 +1,9 @@
-package org.apipractice.Paload_management;
+package org.apipractice.Payload_management;
 
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

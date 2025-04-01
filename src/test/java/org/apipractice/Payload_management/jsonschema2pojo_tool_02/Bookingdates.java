@@ -1,4 +1,6 @@
-package org.apipractice.Paload_management.jsonschema2pojo_tool_02;
+package org.apipractice.Payload_management.jsonschema2pojo_tool_02;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -10,6 +12,9 @@ public class Bookingdates {
         private Boolean depositpaid;
         private Bookingdates bookingdates;
         private String additionalneeds;
+    private String checkin;
+    private String checkout;
+
         private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
         public String getFirstname() {
@@ -68,5 +73,12 @@ public class Bookingdates {
             this.additionalProperties.put(name, value);
         }
 
-
+    public void setCheckin(String checkin) {
+        this.checkin = checkin;
     }
+
+    public void setCheckout(String checkout) {
+        this.checkout = checkout;
+    }
+
+}
